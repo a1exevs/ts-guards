@@ -1,17 +1,31 @@
 {
-  "name": "ts-guards",
-  "version": "0.7.0",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "rimraf dist && tsc"
-  },
+  "name": "@alexevs/ts-guards",
+  "description": "Typescript guards",
+  "version": "0.7.1",
+  "license": "MIT",
   "keywords": ["typescript", "types", "type guards"],
   "author": {
     "name": "AlexEvs"
   },
-  "license": "MIT",
-  "description": "Typescript guards",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a1exevs/ts-guards.git"
+  },
+  "bugs": {
+    "url": "https://github.com/a1exevs/ts-guards/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "publish": "yarn build && npm login && npm publish --access public"
+  },
   "devDependencies": {
     "rimraf": "6.0.1",
     "typescript": "5.7.2"
