@@ -1,4 +1,4 @@
-import { Nillable, Nullable, Optional } from 'src/types';
+import { Nillable, Nullable, Optional } from './types';
 
 /**
  * Guard for new but not yet processed values in switch_cases
