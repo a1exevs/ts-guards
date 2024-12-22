@@ -24,7 +24,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "rimraf dist && tsc",
-    "publish": "yarn build && npm login && npm publish --access public"
+    "publish": "yarn build && npm login && npm publish --access public && exit 0"
   },
   "devDependencies": {
     "rimraf": "6.0.1",
