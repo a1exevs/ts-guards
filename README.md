@@ -3,23 +3,49 @@
 # Description
 Typescript guards
 
-## Yarn version
-v1.22.19
+- Install the [npm package @alexevs/ts-guards](https://www.npmjs.com/package/@alexevs/ts-guards)
+  ```bash
+  // with npm
+  npm i @alexevs/ts-guards
+  // with yarn
+  yarn add @alexevs/ts-guards
+  ```
 
-## Node version
-v20.9.0. Use NVM:
-1. nvm current - check current version of Node
-2. nvm list - show list of available Node versions
-3. nvm install <version> - to install and use Node version.
-4. nvm use <version> - set version of Node as current version
+- Use the package
+  ```typescript
+  import { 
+    isNull, 
+    isUndefined, 
+    isNill, 
+    isEmpty 
+  } from '@alexevs/ts-guards';
 
-## Available Scripts
-In the project directory, you can run:
+  console.log(isNull(null)); // true
+  
+  console.log(isUndefined(undefined)); // true
+  
+  console.log(isNill(null)); // true
+  console.log(isNill(undefined)); // true
+  
+  console.log(isEmpty(undefined)); // true
+  console.log(isEmpty(null)); // true
+  console.log(isEmpty(false)); // false
+  console.log(isEmpty(true)); // false
+  console.log(isEmpty(0)); // false
+  console.log(isEmpty(1)); // false
+  console.log(isEmpty('')); // true
+  console.log(isEmpty('str')); // false
+  console.log(isEmpty([])); // true
+  console.log(isEmpty([1, 2, 3])); // false
+  console.log(isEmpty({})); // true
+  console.log(isEmpty({ name: 'Alex' })); // false
+  ```
 
-### `yarn build`
-First removes the `dist` directory using `rimraf` to ensure a clean build environment and then compiles the TypeScript files using `tsc`.
+## Why?
 
-## Deploy on NPM JS
+Enhance your TypeScript projects with @alexevs/ts-guards!
 
-## Repository
-Link to repository https://github.com/a1exevs/ts-guards.
+This library provides a robust set of utility functions to simplify and streamline type-checking and guard validation in your code.
+
+With ts-guards, you can ensure safer and readable type validation,
+improving code reliability and reducing potential errors.
