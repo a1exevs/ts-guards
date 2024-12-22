@@ -1,2 +1,2 @@
-export { isNull, isEmpty, isNil, exhaustiveCHeck, isUndefined } from 'src/guards';
-export { Optional, Nullable, Nillable } from 'src/types';
+export { isNull, isEmpty, isNil, exhaustiveCHeck, isUndefined } from './guards';
+export { Optional, Nullable, Nillable } from './types';
