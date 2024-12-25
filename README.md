@@ -14,9 +14,9 @@ Typescript guards
 - Use the package
   ```typescript
   import { 
-    isNull, 
-    isUndefined, 
-    isNill, 
+    isNull,
+    isUndefined,
+    isNil, 
     isEmpty 
   } from '@alexevs/ts-guards';
 
@@ -24,8 +24,8 @@ Typescript guards
   
   console.log(isUndefined(undefined)); // true
   
-  console.log(isNill(null)); // true
-  console.log(isNill(undefined)); // true
+  console.log(isNil(null)); // true
+  console.log(isNil(undefined)); // true
   
   console.log(isEmpty(undefined)); // true
   console.log(isEmpty(null)); // true
