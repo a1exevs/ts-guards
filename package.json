@@ -3,7 +3,11 @@
   "description": "Typescript guards",
   "version": "0.7.4",
   "license": "MIT",
-  "keywords": ["typescript", "types", "type guards"],
+  "keywords": [
+    "typescript",
+    "types",
+    "type guards"
+  ],
   "author": {
     "name": "AlexEvs"
   },
@@ -24,9 +28,12 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "rimraf dist && tsc",
-    "publish": "yarn build && npm login && npm publish --access public && exit 0"
+    "publish": "yarn build && npm login && npm publish --access public && exit 0",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "echo TODO"
   },
   "devDependencies": {
+    "prettier": "3.4.2",
     "rimraf": "6.0.1",
     "typescript": "5.7.2"
   }

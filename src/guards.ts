@@ -35,7 +35,7 @@ export const exhaustiveCheck = (param: never) => param;
  * @example console.log(isUndefined(undefined)); // true
  */
 export function isUndefined<E>(param: Optional<E>): param is undefined {
-    return typeof param === 'undefined';
+  return typeof param === 'undefined';
 }
 
 /**
@@ -44,9 +44,8 @@ export function isUndefined<E>(param: Optional<E>): param is undefined {
  * @param param
  */
 export function isDefined<E>(param: Optional<E>): param is E {
-    return !isUndefined(param);
+  return !isUndefined(param);
 }
-
 
 /**
  * Null type guard
@@ -54,7 +53,7 @@ export function isDefined<E>(param: Optional<E>): param is E {
  * @example console.log(isNull(null)); // true
  */
 export function isNull<E>(param: Nullable<E>): param is null {
-    return param === null;
+  return param === null;
 }
 
 /**
@@ -63,7 +62,7 @@ export function isNull<E>(param: Nullable<E>): param is null {
  * @param param
  */
 export function isNotNull<E>(param: Nullable<E>): param is E {
-    return !isNull(param);
+  return !isNull(param);
 }
 
 /**
@@ -71,7 +70,7 @@ export function isNotNull<E>(param: Nullable<E>): param is E {
  * @param param
  */
 export function isNil<E>(param: Nillable<E>): param is null | undefined {
-    return param == null;
+  return param == null;
 }
 
 /**
@@ -80,7 +79,7 @@ export function isNil<E>(param: Nillable<E>): param is null | undefined {
  * @param param
  */
 export function isNotNil<E>(param: Nillable<E>): param is E {
-    return !isNil(param);
+  return !isNil(param);
 }
 
 /**
@@ -89,12 +88,12 @@ export function isNotNil<E>(param: Nillable<E>): param is E {
  * @param param
  */
 export function isEmpty<T>(param: T): boolean {
-    const type = typeof param;
-    if (param === null) return true;
-    if (type === 'boolean') return false;
-    if (type === 'string') return !param;
-    if (type === 'number') return false;
-    if (Array.isArray(param)) return !param.length;
-    if (type === 'object') return !Object.keys(param as object).length;
-    return !param;
+  const type = typeof param;
+  if (param === null) return true;
+  if (type === 'boolean') return false;
+  if (type === 'string') return !param;
+  if (type === 'number') return false;
+  if (Array.isArray(param)) return !param.length;
+  if (type === 'object') return !Object.keys(param as object).length;
+  return !param;
 }
