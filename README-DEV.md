@@ -22,6 +22,12 @@ First removes the `dist` directory using `rimraf` to ensure a clean build enviro
 ### `yarn publish`
 Builds the project, logs into npm account, and publishes the package with public access.
 
+### `yarn format`
+Formats all TypeScript files in the `src` folder using Prettier.
+
+### `yarn prepare`
+Automatically runs `husky` hooks for Git management.
+
 ## Deploy on NPM JS
 
 ## Repository
