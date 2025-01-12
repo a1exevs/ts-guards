@@ -30,9 +30,12 @@
     "build": "rimraf dist && tsc",
     "publish": "yarn build && npm login && npm publish --access public && exit 0",
     "format": "prettier --write \"src/**/*.ts\"",
-    "lint": "echo TODO"
+    "lint": "echo TODO",
+    "prepare": "husky"
   },
   "devDependencies": {
+    "husky": "9.1.7",
+    "lint-staged": "15.3.0",
     "prettier": "3.4.2",
     "rimraf": "6.0.1",
     "typescript": "5.7.2"
