@@ -25,6 +25,15 @@ Builds the project, logs into npm account, and publishes the package with public
 ### `yarn format`
 Formats all TypeScript files in the `src` folder using Prettier.
 
+### `yarn test`
+Runs unit tests using the Jest configuration.
+
+### `yarn test:cov`
+Runs unit tests with coverage calculation option.
+
+### `yarn test:watch`
+Runs unit tests with watch mode.
+
 ### `yarn prepare`
 Automatically runs `husky` hooks for Git management.
 

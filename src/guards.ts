@@ -94,6 +94,7 @@ export function isEmpty<T>(param: T): boolean {
   if (type === 'string') return !param;
   if (type === 'number') return false;
   if (Array.isArray(param)) return !param.length;
+  if (param instanceof Map || param instanceof Set) return !param.size;
   if (type === 'object') return !Object.keys(param as object).length;
   return !param;
 }
