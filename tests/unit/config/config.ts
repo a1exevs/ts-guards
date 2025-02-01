@@ -1,5 +1,5 @@
 import { Config } from 'jest';
-import { rootDir } from '../../common/paths';
+
 import {
   COVERAGE_DIR_NAME,
   MAIN_MODULES_MAP,
@@ -7,6 +7,7 @@ import {
   UNIT_TESTS_COVERAGE_DIR_NAME,
   UNIT_TESTS_POSTFIX,
 } from '../../common/consts';
+import { rootDir } from '../../common/paths';
 
 debugger;
 
