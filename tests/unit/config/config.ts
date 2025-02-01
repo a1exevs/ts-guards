@@ -9,8 +9,6 @@ import {
 } from '../../common/consts';
 import { rootDir } from '../../common/paths';
 
-debugger;
-
 const config: Config = {
   preset: 'ts-jest',
   moduleFileExtensions: ['js', 'jsx', 'json', 'ts', 'tsx'],
