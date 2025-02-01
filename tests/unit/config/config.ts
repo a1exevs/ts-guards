@@ -10,7 +10,7 @@ import {
 import { rootDir } from '../../common/paths';
 
 debugger;
-
+debugger;
 const config: Config = {
   preset: 'ts-jest',
   moduleFileExtensions: ['js', 'jsx', 'json', 'ts', 'tsx'],
