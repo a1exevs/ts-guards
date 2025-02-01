@@ -8,6 +8,8 @@ import {
   UNIT_TESTS_POSTFIX,
 } from '../../common/consts';
 
+debugger;
+
 const config: Config = {
   preset: 'ts-jest',
   moduleFileExtensions: ['js', 'jsx', 'json', 'ts', 'tsx'],
