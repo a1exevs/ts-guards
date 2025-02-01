@@ -25,13 +25,19 @@ Builds the project, logs into npm account, and publishes the package with public
 ### `yarn format`
 Formats all TypeScript files in the `src` folder using Prettier.
 
-### `yarn test`
+### `yarn lint`
+Runs ESLint for static code analysis on TypeScript files.
+
+### `yarn lint:fix`
+Fixes errors found by ESLint in TypeScript files.
+
+### `yarn test:unit`
 Runs unit tests using the Jest configuration.
 
-### `yarn test:cov`
+### `yarn test:unit-cov`
 Runs unit tests with coverage calculation option.
 
-### `yarn test:watch`
+### `yarn test:unit-watch`
 Runs unit tests with watch mode.
 
 ### `yarn prepare`
