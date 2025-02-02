@@ -3,7 +3,11 @@
   "description": "Typescript guards",
   "version": "0.7.4",
   "license": "MIT",
-  "keywords": ["typescript", "types", "type guards"],
+  "keywords": [
+    "typescript",
+    "types",
+    "type guards"
+  ],
   "author": {
     "name": "AlexEvs"
   },
@@ -24,10 +28,36 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "rimraf dist && tsc",
-    "publish": "yarn build && npm login && npm publish --access public && exit 0"
+    "publish": "yarn build && npm login && npm publish --access public && exit 0",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint --config eslint.config.ts \"{src,linter,tests}/**/*.{ts,tsx}\"",
+    "lint:fix": "eslint --config eslint.config.ts --fix \"{src,,linter,tests}/**/*.{ts,tsx}\"",
+    "prepare": "husky",
+    "test:unit": "jest --config tests/unit/config/config.ts",
+    "test:unit-cov": "jest --config tests/unit/config/config.ts --coverage",
+    "test:unit-watch": "jest --config tests/unit/config/config.ts --watch"
   },
   "devDependencies": {
+    "@eslint/js": "9.19.0",
+    "@types/jest": "29.5.14",
+    "@typescript-eslint/eslint-plugin": "8.21.0",
+    "eslint": "9.19.0",
+    "eslint-config-prettier": "10.0.1",
+    "eslint-import-resolver-typescript": "3.7.0",
+    "eslint-plugin-import": "2.31.0",
+    "eslint-plugin-prettier": "5.2.3",
+    "eslint-plugin-unused-imports": "4.1.4",
+    "globals": "15.14.0",
+    "husky": "9.1.7",
+    "jest": "29.7.0",
+    "jiti": "2.4.2",
+    "lint-staged": "15.3.0",
+    "path": "0.12.7",
+    "prettier": "3.4.2",
     "rimraf": "6.0.1",
-    "typescript": "5.7.2"
+    "ts-jest": "29.2.5",
+    "ts-node": "10.9.2",
+    "typescript": "5.7.2",
+    "typescript-eslint": "8.21.0"
   }
 }
