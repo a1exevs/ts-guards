@@ -1,16 +1,17 @@
 import eslintJs from '@eslint/js';
-import tsEslint from 'typescript-eslint';
 import { Linter } from 'eslint';
+import prettierConfig from 'eslint-config-prettier';
+import tsEslint from 'typescript-eslint';
 
 import languageOptions from './linter/language-options';
-import settings from './linter/settings';
 import plugins from './linter/plugins';
-import unusedVarsRule from './linter/rules/unused-vars-rule';
+import absoluteImportPathRule from './linter/rules/absolute-import-path-rule';
 import importOrderRule from './linter/rules/import-order-rule';
 import sortImportsRule from './linter/rules/sort-imports-rule';
-import absoluteImportPathRule from './linter/rules/absolute-import-path-rule';
+import unusedVarsRule from './linter/rules/unused-vars-rule';
+import settings from './linter/settings';
+
 // @ts-ignore
-import prettierConfig from 'eslint-config-prettier';
 
 const config: Linter.FlatConfig[] = [
   eslintJs.configs.recommended,
@@ -31,6 +32,7 @@ const config: Linter.FlatConfig[] = [
     // sources files
     files: ['src/**/*.{ts,tsx}'],
     rules: {
+      'eslint-plugin-tsdoc/syntax': 'error',
       'no-restricted-imports': 'off',
     },
   },
