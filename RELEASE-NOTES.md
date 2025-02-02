@@ -1,3 +1,11 @@
+# Release v0.7.4
+## What's Changed
+* [Common] RELEASE-NOTES.md update by @a1exevs in https://github.com/a1exevs/ts-guards/pull/16
+* [Feature] Mirror-helpers implementation by @a1exevs in https://github.com/a1exevs/ts-guards/pull/17
+* [Common] Version increase v0.7.4 by @a1exevs in https://github.com/a1exevs/ts-guards/pull/18
+
+**Full Changelog**: https://github.com/a1exevs/ts-guards/compare/v0.7.3...v0.7.4
+
 # Release v0.7.3
 ## What's Changed
 * [Common] RELEASE-NOTES.md creation and .npmignore correction by @a1exevs in https://github.com/a1exevs/ts-guards/pull/12

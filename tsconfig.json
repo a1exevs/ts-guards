@@ -8,6 +8,13 @@
     "outDir": "./dist",
     "strict": true,
     "declaration": true,
+    "alwaysStrict": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "typeRoots": [
+      "node_modules/@types",
+      "types"
+    ],
     "paths": {
       "src/*": [
         "src/*"
@@ -15,5 +22,14 @@
     }
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist"]
+  "exclude": [
+    "node_modules",
+    "dist",
+    "tests",
+    "linter",
+    ".coverage",
+    "**/specs/*",
+    "**/*.spec.ts",
+    "**/*.spec.unit.ts"
+  ]
 }

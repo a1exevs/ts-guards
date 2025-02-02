@@ -22,6 +22,30 @@ First removes the `dist` directory using `rimraf` to ensure a clean build enviro
 ### `yarn publish`
 Builds the project, logs into npm account, and publishes the package with public access.
 
+### `yarn format`
+Formats all TypeScript files in the `src` folder using Prettier.
+
+### `yarn lint`
+Runs ESLint for static code analysis on TypeScript files.
+
+### `yarn lint:fix`
+Fixes errors found by ESLint in TypeScript files.
+
+### `yarn test:unit`
+Runs unit tests using the Jest configuration.
+
+### `yarn test:unit-cov`
+Runs unit tests with coverage calculation option.
+
+### `yarn test:unit-watch`
+Runs unit tests with watch mode.
+
+### `yarn prepare`
+Automatically runs `husky` hooks for Git management.
+
+### `yarn docs`
+Generates comprehensive documentation using TypeDoc.
+
 ## Deploy on NPM JS
 
 ## Repository

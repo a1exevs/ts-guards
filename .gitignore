@@ -3,3 +3,5 @@ dist
 .idea
 .yarn
 .yarnrc
+.coverage
+docs
