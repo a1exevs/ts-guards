@@ -1,3 +1,17 @@
+# Release v1.0.0
+## What's Changed
+* [Common] RELEASE-NOTES.md update v0.7.4 by @a1exevs in https://github.com/a1exevs/ts-guards/pull/20
+* [Common] CI configuration (project-build.yml) by @a1exevs in https://github.com/a1exevs/ts-guards/pull/21
+* [Common] Prettier configuration by @a1exevs in https://github.com/a1exevs/ts-guards/pull/22
+* [Common] Husky configuration by @a1exevs in https://github.com/a1exevs/ts-guards/pull/23
+* [Tests] Unit tests by @a1exevs in https://github.com/a1exevs/ts-guards/pull/24
+* [Common] Linter and Tests environments by @a1exevs in https://github.com/a1exevs/ts-guards/pull/25
+* [Common] Renovate configuration by @a1exevs in https://github.com/a1exevs/ts-guards/pull/26
+* [Documentation] TSDoc configuration by @a1exevs in https://github.com/a1exevs/ts-guards/pull/27
+* [Common] Version increase v1.0.0 by @a1exevs in https://github.com/a1exevs/ts-guards/pull/28
+
+**Full Changelog**: https://github.com/a1exevs/ts-guards/compare/v0.7.4...v1.0.0
+
 # Release v0.7.4
 ## What's Changed
 * [Common] RELEASE-NOTES.md update by @a1exevs in https://github.com/a1exevs/ts-guards/pull/16
