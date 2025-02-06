@@ -5,7 +5,7 @@
   "commitMessagePrefix": "[Common] ",
   "prConcurrentLimit": 3,
   "labels": ["common"],
-  "schedule": ["on the 3th day of the month"],
+  "schedule": ["on the 7th day of the month"],
   "lockFileMaintenance": {
     "enabled": true
   },
