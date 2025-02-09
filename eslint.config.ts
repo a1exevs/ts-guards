@@ -1,16 +1,16 @@
 import eslintJs from '@eslint/js';
-import tsEslint from 'typescript-eslint';
 import { Linter } from 'eslint';
+// @ts-ignore prettierConfig doesn't have @types support
+import prettierConfig from 'eslint-config-prettier';
+import tsEslint from 'typescript-eslint';
 
 import languageOptions from './linter/language-options';
-import settings from './linter/settings';
 import plugins from './linter/plugins';
-import unusedVarsRule from './linter/rules/unused-vars-rule';
+import absoluteImportPathRule from './linter/rules/absolute-import-path-rule';
 import importOrderRule from './linter/rules/import-order-rule';
 import sortImportsRule from './linter/rules/sort-imports-rule';
-import absoluteImportPathRule from './linter/rules/absolute-import-path-rule';
-// @ts-ignore
-import prettierConfig from 'eslint-config-prettier';
+import unusedVarsRule from './linter/rules/unused-vars-rule';
+import settings from './linter/settings';
 
 const config: Linter.FlatConfig[] = [
   eslintJs.configs.recommended,
@@ -31,6 +31,7 @@ const config: Linter.FlatConfig[] = [
     // sources files
     files: ['src/**/*.{ts,tsx}'],
     rules: {
+      'eslint-plugin-tsdoc/syntax': 'error',
       'no-restricted-imports': 'off',
     },
   },
@@ -46,7 +47,7 @@ const config: Linter.FlatConfig[] = [
     files: ['linter/**/*.{ts,tsx}', 'eslint.config.ts'],
     rules: {
       'no-restricted-imports': 'off',
-      '@typescript-eslint/ban-ts-comment': 'off',
+      '@typescript-eslint/ban-ts-comment': ['error', { 'ts-ignore': 'allow-with-description' }],
     },
   },
 ];

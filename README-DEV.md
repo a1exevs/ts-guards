@@ -43,6 +43,9 @@ Runs unit tests with watch mode.
 ### `yarn prepare`
 Automatically runs `husky` hooks for Git management.
 
+### `yarn docs`
+Generates comprehensive documentation using TypeDoc.
+
 ## Deploy on NPM JS
 
 ## Repository
