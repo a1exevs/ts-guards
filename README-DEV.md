@@ -78,8 +78,9 @@ Generates comprehensive documentation using TypeDoc.
    d) select "main" branch as a target
 
    e) click the "Publish release"
-8) checkout "develop" and pull, then merge "main" into "develop" and push
-9) update RELEASE-NOTES.md with using generated notes in step 7, create PR with from "common/release-notes-update-vX.X.X" to "develop" message "[Common] RELEASE-NOTES.md" update vX.X.X
+8) checkout "main" and run 'yarn publish'
+9) checkout "develop" and pull, then merge "main" into "develop" and push
+10) update RELEASE-NOTES.md with using generated notes in step 7, create PR with from "common/release-notes-update-vX.X.X" to "develop" message "[Common] RELEASE-NOTES.md" update vX.X.X
 
 ## Repository
 Link to repository https://github.com/a1exevs/ts-guards.
