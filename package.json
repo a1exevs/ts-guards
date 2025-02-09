@@ -1,7 +1,7 @@
 {
   "name": "@alexevs/ts-guards",
   "description": "Typescript guards",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "keywords": [
     "typescript",
@@ -27,11 +27,14 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "version:major": "ts-node scripts/increase-version.ts major",
+    "version:minor": "ts-node scripts/increase-version.ts minor",
+    "version:patch": "ts-node scripts/increase-version.ts patch",
     "build": "rimraf dist && tsc",
     "publish": "yarn build && npm login && npm publish --access public && exit 0",
-    "format": "prettier --write \"src/**/*.ts\"",
-    "lint": "eslint --config eslint.config.ts \"{src,linter,tests}/**/*.{ts,tsx}\"",
-    "lint:fix": "eslint --config eslint.config.ts --fix \"{src,,linter,tests}/**/*.{ts,tsx}\"",
+    "format": "prettier --write \"{src,linter,tests,scripts}/**/*.ts\"",
+    "lint": "eslint --config eslint.config.ts \"{src,linter,tests,scripts}/**/*.{ts,tsx}\"",
+    "lint:fix": "eslint --config eslint.config.ts --fix \"{src,,linter,tests,scripts}/**/*.{ts,tsx}\"",
     "test:unit": "jest --config tests/unit/config/config.ts",
     "test:unit-cov": "jest --config tests/unit/config/config.ts --coverage",
     "test:unit-watch": "jest --config tests/unit/config/config.ts --watch",
@@ -39,10 +42,10 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@eslint/js": "9.19.0",
+    "@eslint/js": "9.20.0",
     "@types/jest": "29.5.14",
-    "@typescript-eslint/eslint-plugin": "8.21.0",
-    "eslint": "9.19.0",
+    "@typescript-eslint/eslint-plugin": "8.23.0",
+    "eslint": "9.20.0",
     "eslint-config-prettier": "10.0.1",
     "eslint-import-resolver-typescript": "3.7.0",
     "eslint-plugin-import": "2.31.0",
@@ -53,14 +56,14 @@
     "husky": "9.1.7",
     "jest": "29.7.0",
     "jiti": "2.4.2",
-    "lint-staged": "15.3.0",
+    "lint-staged": "15.4.3",
     "path": "0.12.7",
     "prettier": "3.4.2",
     "rimraf": "6.0.1",
     "ts-jest": "29.2.5",
     "ts-node": "10.9.2",
     "typedoc": "0.27.6",
-    "typescript": "5.7.2",
-    "typescript-eslint": "8.21.0"
+    "typescript": "5.7.3",
+    "typescript-eslint": "8.23.0"
   }
 }

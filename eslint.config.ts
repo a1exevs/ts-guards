@@ -1,5 +1,6 @@
 import eslintJs from '@eslint/js';
 import { Linter } from 'eslint';
+// @ts-ignore prettierConfig doesn't have @types support
 import prettierConfig from 'eslint-config-prettier';
 import tsEslint from 'typescript-eslint';
 
@@ -10,8 +11,6 @@ import importOrderRule from './linter/rules/import-order-rule';
 import sortImportsRule from './linter/rules/sort-imports-rule';
 import unusedVarsRule from './linter/rules/unused-vars-rule';
 import settings from './linter/settings';
-
-// @ts-ignore
 
 const config: Linter.FlatConfig[] = [
   eslintJs.configs.recommended,
@@ -48,7 +47,14 @@ const config: Linter.FlatConfig[] = [
     files: ['linter/**/*.{ts,tsx}', 'eslint.config.ts'],
     rules: {
       'no-restricted-imports': 'off',
-      '@typescript-eslint/ban-ts-comment': 'off',
+      '@typescript-eslint/ban-ts-comment': ['error', { 'ts-ignore': 'allow-with-description' }],
+    },
+  },
+  {
+    // Script files
+    files: ['scripts/**/*.{ts,tsx}'],
+    rules: {
+      'no-restricted-imports': 'off',
     },
   },
 ];

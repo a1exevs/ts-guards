@@ -1,5 +1,5 @@
 import tsEslintPlugin from '@typescript-eslint/eslint-plugin';
-// @ts-ignore
+// @ts-ignore importPlugin doesn't have @types support
 import importPlugin from 'eslint-plugin-import';
 import prettierPlugin from 'eslint-plugin-prettier';
 import tsDocPlugin from 'eslint-plugin-tsdoc';

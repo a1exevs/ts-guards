@@ -16,6 +16,18 @@ v20.9.0. Use NVM:
 ## Available Scripts
 In the project directory, you can run:
 
+### `yarn version:major`
+Increments the major version in `package.json` and `src/app/manifest.json`.  
+For example, changes `"version": "1.2.3"` to `"version": "2.0.0"`.
+
+### `yarn version:minor`
+Increments the minor version in `package.json` and `src/app/manifest.json`.  
+For example, changes `"version": "1.2.3"` to `"version": "1.3.0"`.
+
+### `yarn version:patch`
+Increments the patch version in `package.json` and `src/app/manifest.json`.  
+For example, changes `"version": "1.2.3"` to `"version": "1.2.4"`.
+
 ### `yarn build`
 First removes the `dist` directory using `rimraf` to ensure a clean build environment and then compiles the TypeScript files using `tsc`.
 
@@ -47,6 +59,28 @@ Automatically runs `husky` hooks for Git management.
 Generates comprehensive documentation using TypeDoc.
 
 ## Deploy on NPM JS
+
+## Release steps
+1) checkout "common/version-increase" and pull
+2) merge "develop" into "common/version-increase"
+3) run yarn version:patch (or :minor, :major)
+4) create commit with message "[Common] Version increase vX.X.X"
+5) create PR with message "[Common] Version increase vX.X.X" from "common/version-increase" into "develop"
+6) create PR with message "Release vX.X.X" from "develop" into "main"
+7) go to [Github Repo Home page](https://github.com/a1exevs/ts-guards) -> Tags -> Releases -> Draft a new release.
+
+   a) create a new tag via "Choose a tag" autocomplete
+
+   b) select "develop" branch as a target
+
+   c) click the "Generate release notes" button, remove unnecessary notes if necessary, check PR messages and correct the messages if necessary (via PR editing)
+
+   d) select "main" branch as a target
+
+   e) click the "Publish release"
+8) checkout "main" and run 'yarn publish'
+9) checkout "develop" and pull, then merge "main" into "develop" and push
+10) update RELEASE-NOTES.md with using generated notes in step 7, create PR with from "common/release-notes-update-vX.X.X" to "develop" message "[Common] RELEASE-NOTES.md" update vX.X.X
 
 ## Repository
 Link to repository https://github.com/a1exevs/ts-guards.
