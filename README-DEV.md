@@ -16,6 +16,18 @@ v20.9.0. Use NVM:
 ## Available Scripts
 In the project directory, you can run:
 
+### `yarn version:major`
+Increments the major version in `package.json` and `src/app/manifest.json`.  
+For example, changes `"version": "1.2.3"` to `"version": "2.0.0"`.
+
+### `yarn version:minor`
+Increments the minor version in `package.json` and `src/app/manifest.json`.  
+For example, changes `"version": "1.2.3"` to `"version": "1.3.0"`.
+
+### `yarn version:patch`
+Increments the patch version in `package.json` and `src/app/manifest.json`.  
+For example, changes `"version": "1.2.3"` to `"version": "1.2.4"`.
+
 ### `yarn build`
 First removes the `dist` directory using `rimraf` to ensure a clean build environment and then compiles the TypeScript files using `tsc`.
 

@@ -27,6 +27,7 @@
     "dist",
     "tests",
     "linter",
+    "scripts",
     ".coverage",
     "**/specs/*",
     "**/*.spec.ts",
