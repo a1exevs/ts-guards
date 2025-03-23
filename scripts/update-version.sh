@@ -1,3 +1,12 @@
+# patch, minor, major
+versionType=$1
+
+# input parameter check
+if [[ -z "$versionType" ]]; then
+  echo "Need to set version type: patch, minor or major"
+  exit 1
+fi
+
 # Merge branches
 git checkout develop
 git pull origin develop
@@ -9,8 +18,22 @@ git merge develop
 prevVersion=$( sed -n -e 's/.*"version": "\(.*\)",/\1/p' package.json | head -1 )
 echo "Previous version: $prevVersion"
 
-# run version-increase script
-yarn version:patch
+case $versionType in
+  patch)
+    yarn version:patch
+    ;;
+  minor)
+    yarn version:minor
+    ;;
+  major)
+    yarn version:major
+    ;;
+  *)
+    echo "Incorrect parameter: $versionType. Please use patch, minor or major."
+    exit 1
+    ;;
+esac
+
 
 # increased version in package.json
 newVersion=$( sed -n -e 's/.*"version": "\(.*\)",/\1/p' package.json | head -1 )
