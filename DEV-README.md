@@ -33,8 +33,14 @@ For example, changes `"version": "1.2.3"` to `"version": "1.3.0"`.
 Increments the patch version in `package.json` and `src/app/manifest.json`.  
 For example, changes `"version": "1.2.3"` to `"version": "1.2.4"`.
 
-### `yarn update-version`
-Automates the process of merging branches, increasing the version in the package.json file, and committing the changes to the designated branch. This ensures the version is updated consistently and the changes are easily trackable in the repository.
+### `yarn update-version:major`
+Automates the process of merging branches, increasing the major-version in the package.json file, and committing the changes to the designated branch. This ensures the version is updated consistently and the changes are easily trackable in the repository.
+
+### `yarn update-version:minor`
+Automates the process of merging branches, increasing the minor-version in the package.json file, and committing the changes to the designated branch. This ensures the version is updated consistently and the changes are easily trackable in the repository.
+
+### `yarn update-version:patch`
+Automates the process of merging branches, increasing the patch-version in the package.json file, and committing the changes to the designated branch. This ensures the version is updated consistently and the changes are easily trackable in the repository.
 
 ### `yarn build`
 First removes the `dist` directory using `rimraf` to ensure a clean build environment and then compiles the TypeScript files using `tsc`.
