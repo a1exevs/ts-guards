@@ -18,6 +18,6 @@ echo "New version: $newVersion"
 
 git add package.json
 
-git commit -m "[Common] Version increase $newVersion"
+git commit -m "[Common] Version increase v$newVersion"
 
 git push origin common/version-increase
