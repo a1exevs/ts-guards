@@ -66,7 +66,7 @@ Runs unit tests with coverage calculation option.
 ### `yarn test:unit-watch`
 Runs unit tests with watch mode.
 
-### `yarn prepare`
+### `yarn postinstall`
 Automatically runs `husky` hooks for Git management.
 
 ### `yarn docs`
