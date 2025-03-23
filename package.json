@@ -1,7 +1,7 @@
 {
   "name": "@alexevs/ts-guards",
   "description": "Typescript guards",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "keywords": [
     "typescript",
@@ -30,6 +30,9 @@
     "version:major": "ts-node scripts/increase-version.ts major",
     "version:minor": "ts-node scripts/increase-version.ts minor",
     "version:patch": "ts-node scripts/increase-version.ts patch",
+    "update-version:major": "./scripts/update-version.sh major",
+    "update-version:minor": "./scripts/update-version.sh minor",
+    "update-version:patch": "./scripts/update-version.sh patch",
     "build": "rimraf dist && tsc",
     "publish": "yarn build && npm login && npm publish --access public && exit 0",
     "format": "prettier --write \"{src,linter,tests,scripts}/**/*.ts\"",
@@ -39,31 +42,32 @@
     "test:unit-cov": "jest --config tests/unit/config/config.ts --coverage",
     "test:unit-watch": "jest --config tests/unit/config/config.ts --watch",
     "docs": "typedoc",
-    "prepare": "husky"
+    "postinstall": "husky"
   },
   "devDependencies": {
-    "@eslint/js": "9.20.0",
+    "@eslint/js": "9.22.0",
     "@types/jest": "29.5.14",
-    "@typescript-eslint/eslint-plugin": "8.23.0",
-    "eslint": "9.20.0",
-    "eslint-config-prettier": "10.0.1",
-    "eslint-import-resolver-typescript": "3.7.0",
+    "@typescript-eslint/eslint-plugin": "8.26.1",
+    "eslint": "9.22.0",
+    "eslint-config-prettier": "10.1.1",
+    "eslint-import-resolver-typescript": "3.9.1",
     "eslint-plugin-import": "2.31.0",
     "eslint-plugin-prettier": "5.2.3",
     "eslint-plugin-tsdoc": "0.4.0",
     "eslint-plugin-unused-imports": "4.1.4",
-    "globals": "15.14.0",
+    "globals": "16.0.0",
     "husky": "9.1.7",
     "jest": "29.7.0",
     "jiti": "2.4.2",
-    "lint-staged": "15.4.3",
+    "lint-staged": "15.5.0",
     "path": "0.12.7",
-    "prettier": "3.4.2",
+    "prettier": "3.5.3",
     "rimraf": "6.0.1",
-    "ts-jest": "29.2.5",
+    "ts-jest": "29.2.6",
     "ts-node": "10.9.2",
-    "typedoc": "0.27.6",
-    "typescript": "5.7.3",
-    "typescript-eslint": "8.23.0"
-  }
+    "typedoc": "0.28.0",
+    "typescript": "5.8.2",
+    "typescript-eslint": "8.26.1"
+  },
+  "packageManager": "yarn@v4.1.0"
 }

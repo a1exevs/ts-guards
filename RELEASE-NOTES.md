@@ -1,3 +1,25 @@
+# Release v1.0.3
+## What's Changed
+* [HOT] README-DEV.md excluding from publish package by @a1exevs in [Commit](https://github.com/a1exevs/ts-guards/commit/ccda5aa8975f62da34d718b63efd7a58b3071a68)
+* [HOT] Fix after merge 'main' by @a1exevs in [Commit](https://github.com/a1exevs/ts-guards/commit/187226bd1e0ee11e36d24b795b38cef7ecc0f636)
+
+**Full Changelog**: https://github.com/a1exevs/ts-guards/compare/v1.0.1...v1.0.3
+
+# Release v1.0.1
+## What's Changed
+* [Common] RELEASE-NOTES.md update v1.0.0 by @a1exevs in https://github.com/a1exevs/ts-guards/pull/30
+* [Common][Linter & Renovate] Minor corrections by @a1exevs in https://github.com/a1exevs/ts-guards/pull/31
+* [Common] Update non-major by @renovate in https://github.com/a1exevs/ts-guards/pull/33
+* [Common] 'increase-version' script by @a1exevs in https://github.com/a1exevs/ts-guards/pull/35
+* [Common][README-DEV] Release steps by @a1exevs in https://github.com/a1exevs/ts-guards/pull/36
+* [Common] Version increase v1.0.1 by @a1exevs in https://github.com/a1exevs/ts-guards/pull/34
+* [Common][README-DEV] Release step with publishing by @a1exevs in https://github.com/a1exevs/ts-guards/pull/37
+
+## New Contributors
+* @renovate made their first contribution in https://github.com/a1exevs/ts-guards/pull/33
+
+**Full Changelog**: https://github.com/a1exevs/ts-guards/compare/v1.0.0...v1.0.1
+
 # Release v1.0.0
 ## What's Changed
 * [Common] RELEASE-NOTES.md update v0.7.4 by @a1exevs in https://github.com/a1exevs/ts-guards/pull/20
