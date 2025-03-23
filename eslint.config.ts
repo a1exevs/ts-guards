@@ -1,6 +1,4 @@
 import eslintJs from '@eslint/js';
-import { Linter } from 'eslint';
-// @ts-ignore prettierConfig doesn't have @types support
 import prettierConfig from 'eslint-config-prettier';
 import tsEslint from 'typescript-eslint';
 
@@ -12,9 +10,11 @@ import sortImportsRule from './linter/rules/sort-imports-rule';
 import unusedVarsRule from './linter/rules/unused-vars-rule';
 import settings from './linter/settings';
 
-const config: Linter.FlatConfig[] = [
+export default tsEslint.config(
   eslintJs.configs.recommended,
-  ...tsEslint.configs.recommended,
+  tsEslint.configs.recommended,
+  tsEslint.configs.strict,
+  tsEslint.configs.stylistic,
   prettierConfig,
   {
     languageOptions,
@@ -57,5 +57,4 @@ const config: Linter.FlatConfig[] = [
       'no-restricted-imports': 'off',
     },
   },
-];
-export default config;
+);
