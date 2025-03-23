@@ -1,3 +1,22 @@
+# Release v1.0.4
+## What's Changed
+* [Common] RELEASE-NOTES.md update v1.0.3 by @a1exevs in https://github.com/a1exevs/ts-guards/pull/39
+* [Common] yarn.lock file update by @a1exevs in https://github.com/a1exevs/ts-guards/pull/41
+* [Common] Lock file maintenance by @renovate in https://github.com/a1exevs/ts-guards/pull/40
+* [Common] Update non-major by @renovate in https://github.com/a1exevs/ts-guards/pull/42
+* [Common] Update dependency globals to v16 by @renovate in https://github.com/a1exevs/ts-guards/pull/43
+* [Common] Lock file maintenance by @renovate in https://github.com/a1exevs/ts-guards/pull/45
+* [Common] Update non-major by @renovate in https://github.com/a1exevs/ts-guards/pull/44
+* [Common] Yarn migration to v4 by @a1exevs in https://github.com/a1exevs/ts-guards/pull/46
+* [Common] update-version.sh script by @a1exevs in https://github.com/a1exevs/ts-guards/pull/47
+* [Common] Version increase v1.0.4 by @a1exevs in https://github.com/a1exevs/ts-guards/pull/48
+* [Common] update-version.sh upgrade (run with parameter - major, minor… by @a1exevs in https://github.com/a1exevs/ts-guards/pull/49
+* [Common] DEV-README.md Release steps actualization by @a1exevs in https://github.com/a1exevs/ts-guards/pull/50
+* Pre-release v1.0.4 by @a1exevs in https://github.com/a1exevs/ts-guards/pull/51
+* [Common][Bugfix] DEV-README.md mistakes fix by @a1exevs in https://github.com/a1exevs/ts-guards/pull/52
+
+**Full Changelog**: https://github.com/a1exevs/ts-guards/compare/v1.0.3...v1.0.4
+
 # Release v1.0.3
 ## What's Changed
 * [HOT] README-DEV.md excluding from publish package by @a1exevs in [Commit](https://github.com/a1exevs/ts-guards/commit/ccda5aa8975f62da34d718b63efd7a58b3071a68)
