@@ -2,8 +2,7 @@ name: Project test
 
 on:
   push:
-    branches: []
-
+    branches: [ develop, main ]
   pull_request:
     branches: [ develop, main ]
 
