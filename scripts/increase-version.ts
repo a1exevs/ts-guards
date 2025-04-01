@@ -58,7 +58,7 @@ function main(): void {
   const type = args[0] as IncreaseVersionMode;
 
   if (![IncreaseVersionMode.MAJOR, IncreaseVersionMode.MINOR, IncreaseVersionMode.PATCH].includes(type)) {
-    console.error('Usage: node increase-version.ts <major|minor|patch>');
+    console.error('Usage: ts-node increase-version.ts <major|minor|patch>');
     process.exit(1);
   }
 
