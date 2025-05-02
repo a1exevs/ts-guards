@@ -4,7 +4,7 @@
 Typescript guards
 
 ## Yarn version
-v4.1.0
+v4.9.0
 ```bash
 npm install -g corepack@0.31.0
 corepack enable
