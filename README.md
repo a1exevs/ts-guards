@@ -1,4 +1,4 @@
-# TS Guards
+![ts-guards](logo.png)
 
 # Description
 Typescript guards
