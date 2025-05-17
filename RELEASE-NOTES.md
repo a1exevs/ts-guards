@@ -1,3 +1,20 @@
+# Release v1.0.5
+## What's Changed
+* [Common] RELEASE-NOTES.md update v1.0.4 by @a1exevs in https://github.com/a1exevs/ts-guards/pull/54
+* [Bugfix][Common] DEV-README.md mistake fix by @a1exevs in https://github.com/a1exevs/ts-guards/pull/55
+* [Bugfix] .lintstagedrc.json config fix by @a1exevs in https://github.com/a1exevs/ts-guards/pull/56
+* [Common] Linter config correction (TS Eslint plugin) by @a1exevs in https://github.com/a1exevs/ts-guards/pull/57
+* [Common][Scripts] Error message text correction by @a1exevs in https://github.com/a1exevs/ts-guards/pull/59
+* [Common][CI/CD] Pipelines run only if commit/pr into 'develop' or 'main' by @a1exevs in https://github.com/a1exevs/ts-guards/pull/60
+* [Common] Update non-major by @renovate in https://github.com/a1exevs/ts-guards/pull/62
+* [Common] Update dependency eslint-import-resolver-typescript to v4 by @renovate in https://github.com/a1exevs/ts-guards/pull/63
+* [Common] Lock file maintenance by @renovate in https://github.com/a1exevs/ts-guards/pull/58
+* [Common] Lock file maintenance and Yarn version actualization in DEV-README.md by @a1exevs in https://github.com/a1exevs/ts-guards/pull/65
+* [Bugfix] 'postinstall' script removing by @a1exevs in https://github.com/a1exevs/ts-guards/pull/68
+* [Common] Version increase v1.0.5 by @a1exevs in https://github.com/a1exevs/ts-guards/pull/69
+
+**Full Changelog**: https://github.com/a1exevs/ts-guards/compare/v1.0.4...v1.0.5
+
 # Release v1.0.4
 ## What's Changed
 * [Common] RELEASE-NOTES.md update v1.0.3 by @a1exevs in https://github.com/a1exevs/ts-guards/pull/39
