@@ -4,7 +4,7 @@
 Typescript guards
 
 ## Yarn version
-v4.1.0
+v4.9.0
 ```bash
 npm install -g corepack@0.31.0
 corepack enable
@@ -66,22 +66,16 @@ Runs unit tests with coverage calculation option.
 ### `yarn test:unit-watch`
 Runs unit tests with watch mode.
 
-### `yarn prepare`
-Automatically runs `husky` hooks for Git management.
-
 ### `yarn docs`
 Generates comprehensive documentation using TypeDoc.
 
 ## Deploy on NPM JS
 
 ## Release steps
-1) checkout "common/version-increase" and pull
-2) merge "develop" into "common/version-increase"
-3) run yarn version:patch (or :minor, :major)
-4) create commit with message "[Common] Version increase vX.X.X"
-5) create PR with message "[Common] Version increase vX.X.X" from "common/version-increase" into "develop"
-6) create PR with message "Release vX.X.X" from "develop" into "main"
-7) go to [Github Repo Home page](https://github.com/a1exevs/ts-guards) -> Tags -> Releases -> Draft a new release.
+1) run yarn update-version:patch (or :minor, :major)
+2) create PR with message "[Common] Version increase vX.X.X" from "common/version-increase" into "develop"
+3) create PR with message "Release vX.X.X" from "develop" into "main"
+4) go to [Github Repo Home page](https://github.com/a1exevs/ts-guards) -> Tags -> Releases -> Draft a new release.
 
    a) create a new tag via "Choose a tag" autocomplete
 
@@ -92,9 +86,9 @@ Generates comprehensive documentation using TypeDoc.
    d) select "main" branch as a target
 
    e) click the "Publish release"
-8) checkout "main" and run 'yarn publish'
-9) checkout "develop" and pull, then merge "main" into "develop" and push
-10) update RELEASE-NOTES.md with using generated notes in step 7, create PR with from "common/release-notes-update-vX.X.X" to "develop" message "[Common] RELEASE-NOTES.md" update vX.X.X
+5) checkout "main" and run 'yarn publish'
+6) checkout "develop" and pull, then merge "main" into "develop" and push
+7) update RELEASE-NOTES.md with using generated notes in step 4, create PR with from "common/release-notes-update-vX.X.X" to "develop" message "[Common] RELEASE-NOTES.md update vX.X.X"
 
 ## Repository
 Link to repository https://github.com/a1exevs/ts-guards.

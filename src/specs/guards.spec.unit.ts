@@ -41,7 +41,11 @@ describe('Guards', () => {
       expect(isUndefined([1, 2, 3])).toBe(false);
     });
     it('should return false when the parameter is a function', () => {
-      expect(isUndefined(() => {})).toBe(false);
+      expect(
+        isUndefined(() => {
+          return;
+        }),
+      ).toBe(false);
     });
     it('should return false when the parameter is a bigint', () => {
       expect(isUndefined(101001010101010111111000n)).toBe(false);
@@ -74,7 +78,11 @@ describe('Guards', () => {
       expect(isDefined([1, 2, 3])).toBe(true);
     });
     it('should return true when the parameter is a function', () => {
-      expect(isDefined(() => {})).toBe(true);
+      expect(
+        isDefined(() => {
+          return;
+        }),
+      ).toBe(true);
     });
     it('should return true when the parameter is a bigint', () => {
       expect(isDefined(101001010101010111111000n)).toBe(true);
@@ -107,7 +115,11 @@ describe('Guards', () => {
       expect(isNull([1, 2, 3])).toBe(false);
     });
     it('should return false when the parameter is a function', () => {
-      expect(isNull(() => {})).toBe(false);
+      expect(
+        isNull(() => {
+          return;
+        }),
+      ).toBe(false);
     });
     it('should return false when the parameter is a bigint', () => {
       expect(isNull(101001010101010111111000n)).toBe(false);
@@ -140,7 +152,11 @@ describe('Guards', () => {
       expect(isNotNull([1, 2, 3])).toBe(true);
     });
     it('should return true when the parameter is a function', () => {
-      expect(isNotNull(() => {})).toBe(true);
+      expect(
+        isNotNull(() => {
+          return;
+        }),
+      ).toBe(true);
     });
     it('should return true when the parameter is a bigint', () => {
       expect(isNotNull(101001010101010111111000n)).toBe(true);
@@ -173,7 +189,11 @@ describe('Guards', () => {
       expect(isNil([1, 2, 3])).toBe(false);
     });
     it('should return false when the parameter is a function', () => {
-      expect(isNil(() => {})).toBe(false);
+      expect(
+        isNil(() => {
+          return;
+        }),
+      ).toBe(false);
     });
     it('should return false when the parameter is a bigint', () => {
       expect(isNil(101001010101010111111000n)).toBe(false);
@@ -206,7 +226,11 @@ describe('Guards', () => {
       expect(isNotNil([1, 2, 3])).toBe(true);
     });
     it('should return true when the parameter is a function', () => {
-      expect(isNotNil(() => {})).toBe(true);
+      expect(
+        isNotNil(() => {
+          return;
+        }),
+      ).toBe(true);
     });
     it('should return true when the parameter is a bigint', () => {
       expect(isNotNil(101001010101010111111000n)).toBe(true);
@@ -254,7 +278,11 @@ describe('Guards', () => {
       expect(isEmpty({ key: 'value' })).toBe(false);
     });
     it('should return false for a function', () => {
-      expect(isEmpty(() => {})).toBe(false);
+      expect(
+        isEmpty(() => {
+          return;
+        }),
+      ).toBe(false);
     });
     it('should return false for a symbol', () => {
       expect(isEmpty(Symbol('symbol'))).toBe(false);
