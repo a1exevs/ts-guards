@@ -4,7 +4,7 @@
 Typescript guards
 
 ## Yarn version
-v4.1.0
+v4.9.0
 ```bash
 npm install -g corepack@0.31.0
 corepack enable
@@ -65,9 +65,6 @@ Runs unit tests with coverage calculation option.
 
 ### `yarn test:unit-watch`
 Runs unit tests with watch mode.
-
-### `yarn prepare`
-Automatically runs `husky` hooks for Git management.
 
 ### `yarn docs`
 Generates comprehensive documentation using TypeDoc.
