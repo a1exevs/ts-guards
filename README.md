@@ -1,4 +1,4 @@
-# TS Guards
+![TS Guards logo](https://raw.githubusercontent.com/a1exevs/ts-guards/main/logo.svg)
 
 # Description
 Typescript guards
