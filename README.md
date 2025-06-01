@@ -1,3 +1,5 @@
+![TS Guards logo](https://raw.githubusercontent.com/a1exevs/ts-guards/develop/logo.svg)
+
 # Description
 Typescript guards
 
