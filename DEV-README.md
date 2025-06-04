@@ -49,7 +49,7 @@ First removes the `dist` directory using `rimraf` to ensure a clean build enviro
 Publishes the package with public access.
 
 ### `yarn format`
-Formats all TypeScript files in the `src` folder using Prettier.
+Formats all TypeScript files using Prettier.
 
 ### `yarn lint`
 Runs ESLint for static code analysis on TypeScript files.
