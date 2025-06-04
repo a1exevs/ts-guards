@@ -34,7 +34,7 @@
     "update-version:minor": "./scripts/update-version.sh minor",
     "update-version:patch": "./scripts/update-version.sh patch",
     "build": "rimraf dist && tsc",
-    "publish": "yarn build && npm login && npm publish --access public && exit 0",
+    "publish": "npm publish --access public",
     "format": "prettier --write \"{src,linter,tests,scripts}/**/*.ts\"",
     "lint": "eslint --config eslint.config.ts \"{src,linter,tests,scripts}/**/*.{ts,tsx}\"",
     "lint:fix": "eslint --config eslint.config.ts --fix \"{src,,linter,tests,scripts}/**/*.{ts,tsx}\"",
