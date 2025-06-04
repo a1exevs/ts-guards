@@ -45,7 +45,7 @@ Automates the process of merging branches, increasing the patch-version in the p
 ### `yarn build`
 First removes the `dist` directory using `rimraf` to ensure a clean build environment and then compiles the TypeScript files using `tsc`.
 
-### `yarn publish`
+### `yarn publish-package`
 Publishes the package with public access.
 
 ### `yarn format`
