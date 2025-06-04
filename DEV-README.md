@@ -69,7 +69,32 @@ Runs unit tests with watch mode.
 ### `yarn docs`
 Generates comprehensive documentation using TypeDoc.
 
-## Deploy on NPM JS
+## 📦 How to set up automatic publishing to npm
+To enable automatic publishing of the package when changes are pushed to the `main` branch, follow these steps:
+### 1. 🔐 Generate an Automation Token on npm
+1. Open your NPM package on https://npmjs.com -> Access Tokens
+2. Click **"Generate New Token" -> "Classic Token"**, then choose **Type** - `Automation`
+3. Copy the generated token (you won’t be able to see it again!).
+
+📘 See [npm’s official docs] for more info.
+
+### 2. 🔑 Add the Token to GitHub Secrets
+1. Open your GitHub repository.
+2. Go to **Settings → Secrets and variables → Actions**.
+3. Click **"New repository secret"**.
+4. Name it: `NPM_TOKEN`
+5. Paste the token value.
+
+📘 See [GitHub’s guide on encrypted secrets] for details.
+
+### 3. ✅ That’s it!
+The GitHub Actions workflow will now use `NPM_TOKEN` to publish the package when version changes are pushed to `main`.
+> ⚠️ Make sure to bump the version in `package.json` before pushing — otherwise, the workflow will fail due to version conflict.
+---
+
+[npm’s official docs]: https://docs.npmjs.com/creating-and-viewing-access-tokens
+[GitHub’s guide on encrypted secrets]: https://docs.github.com/en/actions/security-guides/encrypted-secrets
+
 
 ## Release steps
 1) run yarn update-version:patch (or :minor, :major)
