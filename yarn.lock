@@ -5,12 +5,12 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@alexevs/prettier-config@npm:0.9.0":
-  version: 0.9.0
-  resolution: "@alexevs/prettier-config@npm:0.9.0"
+"@alexevs/prettier-config@npm:0.12.0":
+  version: 0.12.0
+  resolution: "@alexevs/prettier-config@npm:0.12.0"
   peerDependencies:
     prettier: 3.5.3
-  checksum: 10c0/9d94089d4f496754b316384308f4d39bbddb0eac50eaece17889a3b98c99bb2adecc98d22653cd509f2d5c844e13dd2913fda72c3d7bb7a9255cdbf66e369fd2
+  checksum: 10c0/605b02e1129392d8080030453d7035459a59f33ecdc97b3d8a5a8da5b3c3cd8b962900313783a9b9196a352fdaf1cb8e5550b7b725574a7737df14ed411e7d79
   languageName: node
   linkType: hard
 
@@ -18,7 +18,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@alexevs/ts-guards@workspace:."
   dependencies:
-    "@alexevs/prettier-config": "npm:0.9.0"
+    "@alexevs/prettier-config": "npm:0.12.0"
     "@eslint/js": "npm:9.24.0"
     "@types/jest": "npm:29.5.14"
     "@typescript-eslint/eslint-plugin": "npm:8.29.1"
