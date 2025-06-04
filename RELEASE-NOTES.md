@@ -1,3 +1,11 @@
+# Release v1.0.8
+## What's Changed
+* [Common] RELEASE-NOTES.md update v1.0.7 by @a1exevs in https://github.com/a1exevs/ts-guards/pull/87
+* [Bugfix] project-publish.yml script fix by @a1exevs in https://github.com/a1exevs/ts-guards/pull/88
+* [Common] Version increase v1.0.8 by @a1exevs in https://github.com/a1exevs/ts-guards/pull/89
+
+**Full Changelog**: https://github.com/a1exevs/ts-guards/compare/v1.0.7...v1.0.8
+
 # Release v1.0.7
 ## What's Changed
 * [Common] RELEASE-NOTES.md update v1.0.6 by @a1exevs in https://github.com/a1exevs/ts-guards/pull/78
