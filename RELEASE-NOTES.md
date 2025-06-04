@@ -1,3 +1,16 @@
+# Release v1.0.7
+## What's Changed
+* [Common] RELEASE-NOTES.md update v1.0.6 by @a1exevs in https://github.com/a1exevs/ts-guards/pull/78
+* [Common] Prettier config via lib by @a1exevs in https://github.com/a1exevs/ts-guards/pull/79
+* [Common] Publish YML script by @a1exevs in https://github.com/a1exevs/ts-guards/pull/80
+* [Common] Publish YML test (should fail) by @a1exevs in https://github.com/a1exevs/ts-guards/pull/81
+* [Common] Publish YML script (fail case) by @a1exevs in https://github.com/a1exevs/ts-guards/pull/82
+* [Common] Publish YML script ('fail case' test) by @a1exevs in https://github.com/a1exevs/ts-guards/pull/83
+* [Common] Version increase v1.0.7 by @a1exevs in https://github.com/a1exevs/ts-guards/pull/84
+* [Common] DEV-README.md actualization by @a1exevs in https://github.com/a1exevs/ts-guards/pull/85
+
+**Full Changelog**: https://github.com/a1exevs/ts-guards/compare/v1.0.6...v1.0.7
+
 # Release v1.0.6
 ## What's Changed
 * [Common] RELEASE-NOTES.md update v1.0.5 by @a1exevs in https://github.com/a1exevs/ts-guards/pull/71
