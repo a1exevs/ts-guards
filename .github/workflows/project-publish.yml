@@ -53,6 +53,6 @@ jobs:
 
       - name: Publish package
         if: steps.versions.outputs.local_version != steps.versions.outputs.published_version
-        run: yarn publish
+        run: yarn publish-package
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
