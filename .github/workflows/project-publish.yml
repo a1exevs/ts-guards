@@ -38,7 +38,14 @@ jobs:
       - name: Compare versions and decide to publish
         if: steps.versions.outputs.local_version != steps.versions.outputs.published_version
         run: |
-          echo "Version has changed. Proceeding with build and publish."
+          echo "✅ Version has changed. Proceeding with build and publish."
+
+      - name: Fail if version has not changed
+        if: steps.versions.outputs.local_version == steps.versions.outputs.published_version
+        run: |
+          echo "❌ Local version matches published version (${{ steps.versions.outputs.local_version }})."
+          echo "You must bump the version before publishing."
+          exit 1
 
       - name: Project build
         if: steps.versions.outputs.local_version != steps.versions.outputs.published_version
