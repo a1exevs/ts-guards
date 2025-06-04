@@ -1,3 +1,12 @@
+# Release v1.0.9
+## What's Changed
+* [Common] RELEASE-NOTES.md update v1.0.8 by @a1exevs in https://github.com/a1exevs/ts-guards/pull/91
+* [Common] DEV-README.md update (How to set up automatic publishing to npm) by @a1exevs in https://github.com/a1exevs/ts-guards/pull/93
+* [Bugfix] Publish script fix to avoid default action by @a1exevs in https://github.com/a1exevs/ts-guards/pull/94
+* [Common] Version increase v1.0.9 by @a1exevs in https://github.com/a1exevs/ts-guards/pull/92
+
+**Full Changelog**: https://github.com/a1exevs/ts-guards/compare/v1.0.8...v1.0.9
+
 # Release v1.0.8
 ## What's Changed
 * [Common] RELEASE-NOTES.md update v1.0.7 by @a1exevs in https://github.com/a1exevs/ts-guards/pull/87
