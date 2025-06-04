@@ -86,7 +86,7 @@ Generates comprehensive documentation using TypeDoc.
    d) select "main" branch as a target
 
    e) click the "Publish release"
-5) checkout "main" and run 'yarn publish'
+5) check 'project-publish.yml' job result (Github Actions)
 6) checkout "develop" and pull, then merge "main" into "develop" and push
 7) update RELEASE-NOTES.md with using generated notes in step 4, create PR with from "common/release-notes-update-vX.X.X" to "develop" message "[Common] RELEASE-NOTES.md update vX.X.X"
 
