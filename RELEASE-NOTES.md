@@ -1,3 +1,14 @@
+# Release v1.0.6
+## What's Changed
+* [Common] RELEASE-NOTES.md update v1.0.5 by @a1exevs in https://github.com/a1exevs/ts-guards/pull/71
+* [Common] Logo of package by @a1exevs in https://github.com/a1exevs/ts-guards/pull/72
+* [Common] Logo update by @a1exevs in https://github.com/a1exevs/ts-guards/pull/73
+* [Common] Logo of package in README.md by @a1exevs in https://github.com/a1exevs/ts-guards/pull/74
+* [Common] Logo of package in README.md (via main branch) by @a1exevs in https://github.com/a1exevs/ts-guards/pull/75
+* [Common] Version increase v1.0.6 by @a1exevs in https://github.com/a1exevs/ts-guards/pull/76
+
+**Full Changelog**: https://github.com/a1exevs/ts-guards/compare/v1.0.5...v1.0.6
+
 # Release v1.0.5
 ## What's Changed
 * [Common] RELEASE-NOTES.md update v1.0.4 by @a1exevs in https://github.com/a1exevs/ts-guards/pull/54
