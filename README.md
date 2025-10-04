@@ -1,7 +1,7 @@
 ![TS Guards logo](https://raw.githubusercontent.com/a1exevs/ts-guards/main/logo.svg)
 
 # Description
-Typescript guards
+Typescript guards library.
 
 - Install the [npm package @alexevs/ts-guards](https://www.npmjs.com/package/@alexevs/ts-guards)
   ```bash

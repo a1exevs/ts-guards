@@ -1,7 +1,7 @@
 # TS Guards
 
 # Description
-Typescript guards
+Typescript guards library.
 
 ## Yarn version
 v4.9.0

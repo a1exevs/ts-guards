@@ -1,6 +1,6 @@
 {
   "name": "@alexevs/ts-guards",
-  "description": "Typescript guards",
+  "description": "Typescript guards library.",
   "version": "1.0.9",
   "license": "MIT",
   "keywords": [
